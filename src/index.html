@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Subplug</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <base href="/">
+  <link type="text/css" rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css"/>
+  <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous"> 
+  <link  type="text/css" href="../node_modules/wowjs/css/libs/animate.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <app-root></app-root>
+
+ 
+  <!-- <script src="../src/assets/jquery/dist/jquery.min.js"></script> -->
+   <script type="text/javascript" src="assets/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="/src/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="assets/waypoints/waypoints.min.js"></script>
+  <!-- <script src="assets/Counterup/jquery.countup.min.js"></script> -->
+ <!-- <script type="text/javascript" src="../node_modules/counterup/jquery.counterup.min.js"></script> -->
+  <script src="assets/wow/wow.js">
+  </script>
+   <script>
+    //  $(document).ready(()=>{
+    //   $('.counter').counterUp({
+    //     delay: 10,
+    //     time:1200
+    //   })
+    // });
+    
+//     $('.counter').counterUp({
+//     delay: 10,
+//     time: 1000,
+//     offset: 70,
+//     beginAt: 100,
+//     formatter: function (n) {
+//       return n.replace(/,/g, '.');
+//     }
+// });
+
+    wow = new WOW({
+        boxCLass: 'wow',
+        animateClass: 'animated',
+        offset: 0,
+        mobile: true,
+        live: false,
+    });
+    wow.init();
+    
+</script>
+
+</body>
+</html>

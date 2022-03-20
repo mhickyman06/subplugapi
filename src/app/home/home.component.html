@@ -1,0 +1,297 @@
+<style>
+
+</style>
+
+<div class="top-div">
+  <div class="child-div">
+    <app-navigation></app-navigation>
+    <div class="text-container container">
+          <h2>Welcome to <span>Sub</span><span class="sp-c">plug</span></h2>
+          <p class="mt-3">Your number one official platform that
+            provides you with the solutions to digital demands at a good and
+            accommodating price.
+          </p>
+          <div class="btn-container">
+             <a class="home-btns lg-btn" routerLink="login">Login</a>
+            <a routerLink="signup" class="home-btns sn-btn">Sign up</a>
+          </div>
+    </div>
+  </div>
+</div>
+
+<section class="pricing-sect">
+  <div class="container sub-pricing-sect mt-3">
+    <app-vtu-section></app-vtu-section>
+  </div>
+</section>
+
+
+<section id="pricings" class="pricings">
+  <div class="container">
+    <h4 class="text-center">Our Data Plan Pricing Tier</h4>
+    <div class="mt-5 row">
+      <div class="col-12 col-md-6 col-lg-6 mb-5 wow fadeInRight " data-wow-delay="0.2s" data-wow-duration="2s">
+        <div class="mtn_div pricings-div">
+          <div class="text-center">
+            <img src="../../assets/brand logo/Mtn-logo.jpeg"
+            alt="mtn logo" class="logo mt-3">
+            <h6 class="mt-2">Mtn Data</h6>
+          </div>
+          <div class="data-content">
+            <div class="row data-row" *ngFor="let item of DataPricings">
+              <span class="col-4">{{item.data}}</span>
+              <span class="col-4">{{item.price}}</span>
+              <span class="col-4">{{item.duration}}</span>
+            </div>
+              <div class="mt-4 text-center">
+                <a class="waves-effect waves-light btn mt-3 mb-5" style="color:white">
+                   <i class="fa fa-shopping-cart mr-3" aria-hidden="true"></i>Order Now</a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6 mb-5 wow fadeInRight" data-wow-delay="0.4s" data-wow-duration="2s">
+        <div class="airtel_div pricings-div">
+          <div class="text-center">
+            <img src="../../assets/brand logo/Airtel-logo.png"
+            alt="airtel logo" class="logo mt-3">
+            <h6 class="mt-2">Airtel Data</h6>
+          </div>
+          <div class="data-content" style="color: white;" >
+            <div class="row data-row" *ngFor="let item of DataPricings">
+              <span class="col-4">{{item.data}}</span>
+              <span class="col-4">{{item.price}}</span>
+              <span class="col-4">{{item.duration}}</span>
+            </div>
+            <div class="mt-4 text-center">
+              <a class="waves-effect waves-light btn mt-3 mb-5" style="color:white">
+                <i class="fa fa-shopping-cart mr-3" aria-hidden="true"></i>Order Now</a>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6 mb-5 wow fadeInRight" data-wow-delay="0.6s" data-wow-duration="2s">
+        <div class="glo_div pricings-div">
+          <div class="text-center">
+            <div class="text-center">
+              <img src="../../assets/brand logo/Glo-logo.jpeg"
+              alt="mtn logo" class="logo mt-3">
+              <h6 class="mt-2">Glo Data</h6>
+            </div>
+            <div class="data-content" style="color: white;">
+              <div class="row data-row" *ngFor="let item of DataPricings">
+                <span class="col-4">{{item.data}}</span>
+                <span class="col-4">{{item.price}}</span>
+                <span class="col-4">{{item.duration}}</span>
+              </div>
+              <div class="mt-4 text-center">
+                <a class="waves-effect waves-light btn mt-3 mb-5" style="color:white">
+                  <i class="fa fa-shopping-cart mr-3" aria-hidden="true"></i>Order Now</a>
+              </div>
+          </div>
+          </div>          
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6 mb-5  wow fadeInRight" data-wow-delay="0.8s" data-wow-duration="2s">
+        <div class="etisalat_div pricings-div">
+          <div class="text-center">
+            <img src="../../assets/brand logo/9mobilelogo.jpeg"
+            alt="mtn logo" class="logo mt-3">
+            <h6 class="mt-2">9mobile Data</h6>
+          </div>
+          <div class="data-content" style="color: white;">
+            <div class="row data-row" *ngFor="let item of DataPricings">
+              <span class="col-4">{{item.data}}</span>
+              <span class="col-4">{{item.price}}</span>
+              <span class="col-4">{{item.duration}}</span>
+            </div>
+            <div class="mt-4 text-center">
+              <a class="waves-effect waves-light btn mt-3 mb-5" style="color:white">
+                <i class="fa fa-shopping-cart mr-3" aria-hidden="true"></i>Order Now</a>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about-us" class="about_us">
+  <div class="sub_about_us ">
+    <div >
+        <img  src="../../assets/images/about-us.jpg" alt="phone-text">
+    </div>
+    <div style="display: block;">
+      <h2>Why should you choose<br> us?</h2>
+      <p >We offer instant recharge of Airtime, Databundle, CableTV (DStv, GOtv & Startimes), Electricity Bill Payment and more.</p>
+      <ul class="mt-5  about-us-ul" >
+        <li class="wow fadeInRight" animation-name:fadeInRight data-wow-delay="0s" data-wow-duration="2s" style="visibility: hidden; animation-name:fadeInRight; position: relative;" ><i class="fa fa-check-circle mr-3" style="color: #e59800;"></i><span>We Are Fast </span></li>
+        <li class="wow fadeInRight" animation-name:fadeInRight data-wow-delay="0.2s" data-wow-duration="2s" style="visibility: hidden; animation-name:fadeInRight;position: relative;"><i class="fa fa-check-circle mr-3" style="color: #e59800;"></i><span>We Offer Automated Services </span> </li>
+        <li class="wow fadeInRight" animation-name:fadeInRight data-wow-delay="0.4s" data-wow-duration="2s" style="visibility: hidden; animation-name:fadeInRight;position: relative;"><i class="fa fa-check-circle mr-3" style="color: #e59800;"></i><span>Our services Are 100% Secured</span></li>
+        <li class="wow fadeInRight" animation-name:fadeInRight data-wow-delay="0.6s" data-wow-duration="2s" style="visibility: hidden; animation-name:fadeInRight;position: relative;"><i class="fa fa-check-circle mr-3" style="color: #e59800;"></i><span>We Are Reliable and Trustworthy</span></li>
+        <li class="wow fadeInRight" animation-name:fadeInRight data-wow-delay="0.8s" data-wow-duration="2s" style="visibility: hidden; animation-name:fadeInRight;position:relative;"><i class="fa fa-check-circle mr-3" style="color: #e59800;"></i><span>Always Active/Offline</span></li>
+        <li class="wow fadeInRight" animation-name:fadeInRight data-wow-delay="1s" data-wow-duration="2s" style="visibility: hidden; animation-name:fadeInRight;position: relative;"><i class="fa fa-check-circle mr-3" style="color: #e59800;"></i><span>24/7 Customer Support</span></li>
+      </ul>
+    </div>
+  </div>
+  <div id="services" class="our-services container mt-5 wow fadeIn" data-wow-delay="0.3s" data-wow-duration="2s" >
+    <h2>Our Services</h2>
+    <p class="mt-4">In<b style="color: #e59800;"> SUBPLUG</b> we help you make payments for services you enjoy right from the comfort of your home, office,etc.
+    The experience of a complete convenience,fast rate service delivery, and easy payments is just right at your fingers </p>
+  </div>
+  <div class="our-services container mt-5 wow fadeIn"data-wow-delay="0.3s" data-wow-duration="2s">
+    <h2>Become Our Agent</h2>
+    <p class="mt-4"> Join our network of outstanding entrepreneurs patnering with KINGTOMSDATA . Bring the KINGTOMSDATA 'easy-payments' experience closer to your network and earn a commission for
+       every transaction you perform for your customers.</p>
+    <p class="mt-4">We offer our Referrers the best referral program incentives to encourage entrepreneurial and managerial
+       skill acquisition;
+      enhance growth and development and general empowerment among our students on campuses of higher learning and youths in diaspora. Finally,
+       to promote technology via the use of ICT tools in our society.
+    </p>
+    <a class="waves-effect waves-light btn mt-3 mb-5" style="color:white"><i class="fa fa-thumbs-up mr-3"></i>Get Started</a>
+  </div>
+</section>
+
+<section class="user-counter ">
+  <div class="container row">
+    <div class="col-6 col-lg-3">
+      <h4 #counter id="reg_user"[countUp]="param1">0k</h4>
+      <h6>Registered User</h6>
+    </div>
+    <div class="col-6 col-lg-3">
+      <h4 class="counter" #counter [countUp]="param2">0k</h4>
+      <h6>Happy CLients</h6>
+    </div>
+    <div class="col-6 col-lg-3">
+      <h4 class="counter" #counter [countUp]="param3">0</h4>
+      <h6>Logged in Users</h6>
+    </div>
+    <div class="col-6 col-lg-3">
+      <h4 class="counter"#counter [countUp]="param4">0%</h4>
+      <h6>Percentage of Trust</h6>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="testimonials">
+ 
+  <div class='container-fluid pb-5'>    
+    <div class="testimonial-header">    
+      <h5>Testimonies from Our Users</h5>
+      <p>please do checkout the feedbacks from  some of our customers</p>
+    </div> 
+    <owl-carousel-o [options]="customOptions">
+      <!-- <ng-template carouselSlide >
+        <div  class=" testimonials-div">
+          <div style="margin-left:20px">
+            <img src="../../assets/images/Apostrophe.jpg" 
+            style="width:50px; aspect-ratio:1" alt="apostrophe">
+            <div class="mt-3 row">
+              <div class="col-4">
+                <p style="margin-top: 3px;">
+                  On a serious note when it comes to the best platform 
+                  to get affordable  data Subplug is the best.
+                   So i recommend u guys to use Subplug as
+                    their services are fast, automated, and secured.
+                </p>
+                <h6 class="mt-2" style="color:green">Madu Felix</h6>
+              </div>
+              <div class="col-7">
+               <img src="../../assets/images/Testimonial-image2.jpeg" style="margin-top: 13px;" alt="testimonial-avatar">
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </ng-template>   -->
+      <ng-template carouselSlide style="width:500px">
+        <div  class=" testimonials-div">
+          <div >
+            <img src="../../assets/images/Apostrophe.jpg" 
+            style="width:50px; aspect-ratio:1" alt="apostrophe">
+            <div class="mt-3">
+              <div class="">
+                <p class="container-fluid" style="margin-top: 20px;">
+                  On a serious note when it comes to the best platform 
+                  to get affordable  data, Subplug is the best.
+                   So i recommend u guys to use Subplug as
+                    their services are fast, automated, and secured.
+                </p>
+                <h6 class="mt-2" >Madu Felix</h6>
+              </div>
+              <div class="">
+               <img class="testimonial-image" src="../../assets/images/Testimonial-image2.jpeg" style="" alt="testimonial-avatar">
+              </div>
+            </div>
+          </div>  
+        </div>
+      </ng-template> 
+      <ng-template carouselSlide style="width:250px" >
+        <div  class=" testimonials-div">
+          <div >
+            <img src="../../assets/images/Apostrophe.jpg" 
+            style="width:50px; aspect-ratio:1" alt="apostrophe">
+            <div class="mt-3">
+              <div class="">
+                <p class="container-fluid" style="margin-top: 20px;">
+                 Back then, i spend a lot of money on data subscriptions,
+                 but all this became a past tense when i met Subplug.
+                </p>
+                <h6 class="mt-2" >Paul Tewogbola</h6>
+              </div>
+              <div class="">
+               <img class="testimonial-image" src="../../assets/images/Testimonial-image3.jpeg" alt="testimonial-avatar">
+              </div>
+            </div>
+          </div>  
+        </div>
+      </ng-template>
+      <ng-template carouselSlide style="width:250px">
+        <div  class=" testimonials-div">
+          <div>
+            <img src="../../assets/images/Apostrophe.jpg" 
+            style="width:50px; aspect-ratio:1" alt="apostrophe">
+            <div class="mt-3">
+              <div class="">
+                <p class="container-fluid" style="margin-top: 20px;">
+                  For me it is the quick response to issues.
+                  and i think we have been doing well so far.
+                </p>
+                <h6 class="mt-2" >Gideon Hassan</h6>
+              </div>
+              <div class="">
+               <img class="testimonial-image" src="../../assets/images/Testimonial-image1.jpeg" alt="testimonial-avatar">
+              </div>
+            </div>
+          </div>  
+        </div>
+      </ng-template>   
+      <!-- <ng-template carouselSlide [width]="carouselWidth">
+        <div  class=" testimonials-div">
+          <div style="margin-left:20px">
+            <img src="../../assets/images/Apostrophe.jpg" 
+            style="width:50px; aspect-ratio:1" alt="apostrophe">
+            <div class="mt-3 row">
+              <div class="col-5">
+                <p class="container-fluid" style="margin-top: 15px;">
+                  For me it is the quick response to issues.
+                   and i think we have been doing well so far.
+                </p>
+                <h6 class="mt-2" >Gideon Hassan</h6>
+              </div>
+              <div class="col-7">
+               <img src="../../assets/images/Testimonial-image1.jpeg" alt="testimonial-avatar">
+              </div>
+            </div>
+          </div>  
+        </div>
+      </ng-template>  -->
+    </owl-carousel-o>   
+  </div>  
+</section>
+
+
+<app-footer></app-footer>
+

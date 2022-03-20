@@ -1,0 +1,46 @@
+@import url("../../../node_modules/wowjs/css/libs/animate.css");
+@import url("../../assets/fontawesome-free-5.13.0-web/css/all.min.css");
+@import url("../../assets/fontawesome-free-5.13.0-web/css/all.css");
+@import url("../../assets/fontawesome-free-5.13.0-web/css/brands.css");
+@import url("../../assets/fontawesome-free-5.13.0-web/css/regular.css");
+@import url("../../assets/fontawesome-free-5.13.0-web/css/solid.css");
+@import url("../../../node_modules/materialize-css/dist/css/materialize.css");
+
+.footer{
+    height: auto;
+    min-height: 250px;
+    width:100%;
+    backdrop-filter: blur(5rem);
+    background-color: #264c3b;
+  }
+
+ .footer-content{
+    color: black; 
+} 
+.footer-bottom p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.footer h4{
+    font-size: 23px;
+    font-weight: 600;
+}
+.footer p{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer-section ul li{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 0 5px 0;
+}
+
+.footer-section li a{
+    color: black;
+}
+
+.footer-section li a:hover{
+    color: rgb(39, 34, 34)
+    ;
+}

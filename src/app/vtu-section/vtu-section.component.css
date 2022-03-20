@@ -1,0 +1,14 @@
+@import url("../../assets/css/main1.css");
+@import url("../../assets/css/style.css");
+@import url("../../assets/css/remita.css");
+@import url("../../assets/bootstrap/dist/css/bootstrap.css");
+@import url("../../assets/fontawesome-free-5.13.0-web/css/all.min.css");
+@import url("../../assets/fontawesome-free-5.13.0-web/css/all.css");
+@import url("../../assets/fontawesome-free-5.13.0-web/css/brands.css");
+@import url("../../../node_modules/wowjs/css/libs/animate.css");
+
+
+.svg-icon{
+  width: fit-content;
+  height: 30px;
+}
