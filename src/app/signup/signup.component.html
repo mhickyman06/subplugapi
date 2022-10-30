@@ -1,1 +1,41 @@
-<p>signup works!</p>
+<div class="login-body">
+    <div class="login-content ">
+        <!-- <div class="mt-3 row mb-5">
+            <div class="col-7">
+
+            </div>
+            <div class="col-5 error-div">
+
+            </div>
+        </div> -->
+       
+        <h5>Sign In</h5>
+        <h6 class="mt-5">Don't Have an Account?</h6>
+        <div class="row">
+        <form [formGroup]="signupData" (ngSubmit)="submit(signupData)" autof autocomplete="off">
+            <input class="login-input col-12 mt-3  " formControlName="firstName" placeholder="First Name:">
+            <p class="input-error col-12 text-danger" *ngIf="firstName.invalid && firstName.touched">First Name is required</p>
+            <input class="login-input col-12 mt-3" formControlName="lastName" placeholder="Last Name:">
+            <p class="input-error col-12 text-danger" *ngIf="lastName.invalid && lastName.touched">Last Name is required</p>
+            <input class="login-input col-12 mt-3 "  formControlName="phone" placeholder="Phone:">
+            <p class="input-error col-12 text-danger" *ngIf="phone.invalid && phone.touched">Phone number is required</p>
+            <input class="login-input col-12 mt-3 " formControlName="email" placeholder="email:">
+            <p class="input-error col-12 text-danger" *ngIf="email.invalid && email.touched">email is required</p>
+            <input class="login-input col-12 mt-3 " type="password" formControlName="password"  placeholder="password:">
+            <p class="input-error col-12 text-danger"  *ngIf="password.invalid && password.touched">password is required</p>
+            <input class="login-input col-12 mt-3 mb-3" type="password" formControlName="confirmPassword" (keyup)="onPasswordchange()" placeholder="Confirm Password:">
+            <p class="input-error col-12 text-danger" *ngIf="confirmPassword.invalid && confirmPassword.touched">Confirm password is required</p>
+            <p class="input-error col-12 text-danger" *ngIf="confirmPassword.error">Confirm Password Didn't Match</p>
+            <div class="col-12">
+                <a class="login-btn  col-11" (click)="submit(signupData)">
+                    Sign Up <i class="fa fa-spinner fa-spin" *ngIf="isClicked"></i> </a>
+            </div> 
+            <div *ngIf="isError" id="error-div" class="error-div " data-wow-delay="0.6s" data-wow-duration="2s"> 
+                <p class="text-center mt-2">
+                    {{ResponseTitle}}
+                </p>           
+            </div>
+        </form>
+    </div>
+    </div>
+</div>

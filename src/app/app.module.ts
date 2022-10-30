@@ -15,7 +15,9 @@ import { SignupComponent } from './signup/signup.component';
 import { VtuSectionComponent } from './vtu-section/vtu-section.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import { PortalComponent } from './portal/portal.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,12 +27,16 @@ import { FooterComponent } from './footer/footer.component';
     SignupComponent,
     VtuSectionComponent,
     FooterComponent,
+    PortalComponent,
   ],
   imports: [
   //MatButtonModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     OwlModule,
     CarouselModule,
     MaterializeButtonModule,
+    // MatDialogModule,
     NgwWowModule,
     CountUpModule,
     BrowserModule,

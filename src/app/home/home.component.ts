@@ -1,8 +1,10 @@
+import { ResourcesserviceService } from './../services/resourcesservice.service';
 import { NgwWowService } from 'ngx-wow';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import * as $ from 'jquery';
+import { HttpErrorResponse } from '@angular/common/http';
 
  
 
@@ -76,24 +78,30 @@ export default class HomeComponent implements OnInit{
     nav: true
   }
 
-  public DataPricings = [
-    {data:"150mb",price:"150naira",duration:"1Month"},
-    {data:"150mb",price:"150naira",duration:"1Month"},
-    {data:"150mb",price:"150naira",duration:"1Month"},
-    {data:"150mb",price:"150naira",duration:"1Month"},
-    {data:"150mb",price:"150naira",duration:"1Month"},
-    {data:"150mb",price:"150naira",duration:"1Month"},
-  ]
+  // public DataPricings = [
+  //   {data:"150mb",price:"150naira",duration:"1Month"},
+  //   {data:"150mb",price:"150naira",duration:"1Month"},
+  //   {data:"150mb",price:"150naira",duration:"1Month"},
+  //   {data:"150mb",price:"150naira",duration:"1Month"},
+  //   {data:"150mb",price:"150naira",duration:"1Month"},
+  //   {data:"150mb",price:"150naira",duration:"1Month"},
+  // ]
+  public DataPricings;
   constructor(private router: Router,
-    private wowService:NgwWowService) {
-      this.wowService.init();
-      
+    private wowService:NgwWowService,
+    private resources: ResourcesserviceService) {
+      this.wowService.init();     
   }
-  ngOnInit(): void {
-    // $('.carousel').carousel();
+  ngOnInit() {
+    this.resources.getDataPricings().subscribe(data=>{
+      let vowel ;
+      console.log(data);
+      this.DataPricings = data;
+    },
+    (error:HttpErrorResponse)=>{
+      console.error(error.error)
+    })
   }
-
-  
 
   changeBg(id){
     document.getElementById(id).classList.remove("bg-yellow")
@@ -105,7 +113,7 @@ export default class HomeComponent implements OnInit{
     document.getElementById(id).classList.add("bg-yellow")
   }
   login(){
-    // this.router.navigateByUrl("/login");
   }
+
 }
 

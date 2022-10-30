@@ -1,0 +1,145 @@
+@import url("../../../node_modules/wowjs/css/libs/animate.css");
+@import url("../../assets/fontawesome-free-5.13.0-web/css/all.min.css");
+@import url("../../assets/fontawesome-free-5.13.0-web/css/all.css");
+@import url("../../assets/fontawesome-free-5.13.0-web/css/brands.css");
+@import url("../../assets/fontawesome-free-5.13.0-web/css/regular.css");
+@import url("../../assets/fontawesome-free-5.13.0-web/css/solid.css");
+
+
+
+.login-body{
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:auto; 
+    min-height: 1000px;
+    /* height:100%;  */
+    background-image: url("../../assets/images/bg-3.jpeg");
+    background-position:  50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-body::before{
+    content: "";
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: 1000px;
+
+    /* height: 100%; */
+    background-color:rgba(0, 0, 0, 0.6) ;
+}
+
+.login-content{
+    position: absolute;
+    z-index: 12;
+    color: white;
+    justify-content: center;
+    width: 400px;
+    height:auto; 
+    /* min-height: 100%; */
+    text-align: center;
+    left:0;
+    right:0;
+    top:10%;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 2px solid white; */
+}
+.login-input{
+    height:auto;
+    min-height: 40px;
+    backdrop-filter: blur(5rem);
+    background-color: #5a5c56;
+    border-radius: 20px;
+    border: 1px solid #565851;
+    /* text-align: center; */
+    color:white;
+    font-size: 12px;
+}
+.login-input::placeholder{
+    color:white;
+    text-align: left;
+    font-size: 12px;
+}
+
+.forgot-password{
+    color:white;
+    text-align: right;
+    font-size: 12px;
+}
+
+.forgot-password:hover{
+    color:green;
+    text-decoration: none;
+}
+
+.login-input:focus, .login-input:hover {
+    box-shadow: none;
+    border:none;
+    outline: none;
+}
+
+.login-content h5{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.login-btn {
+    background-color: green;
+    color:white;
+    /* padding: 5px 155px 5px 155px; */
+    padding:5px 140px;
+    border-radius: 60px;
+    border: none;
+    font-size:18px;
+    cursor: pointer;
+    transition: 0.8s;
+    min-height: 40px;
+}
+
+.login-btn:hover{
+    background-color: rgb(86, 150, 86);
+    color:white;
+    text-decoration: none;
+}
+
+.lg-ch,.input-error{
+    font-size: 12px;
+    text-align: left;
+}
+.input-error{
+    text-align: left;
+    /* color:red; */
+}
+
+input.ng-invalid{
+    border-bottom: 2px solid white;
+}
+
+input.ng-valid{
+    border-bottom: 2px solid green;
+}
+
+.error-div{
+    /* position: relative;
+    z-index: 10000;
+    float:right; */
+    /* top:40px; */
+    /* left:400px; */
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding: 3px 10px;
+    text-align: center;
+    color: red;
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    background-color: white;
+    min-height: 50px;
+}

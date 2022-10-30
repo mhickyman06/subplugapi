@@ -1,3 +1,4 @@
+import { PortalComponent } from './portal/portal.component';
 import { SignupComponent } from './signup/signup.component';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'signup',
     component:SignupComponent
+  },
+  {
+    path: 'portal',
+    component: PortalComponent
   }
 ];
 
